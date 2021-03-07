@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Poppins:400,500,700,800");
+
+* {margin: 0; padding: 0;}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-image: url('/images/bg-mobile.svg');
+  background-color: hsl(257, 40%, 49%);
+  -webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+            background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+/*Nav Logo*/
+nav #logo{
+    width: 12rem;
+margin: 4rem 4rem 4rem 1.5rem;
+}
+/* BACKGROUND */
+#bg-desktop {
+  display: none;
+}
+
+#bg-mobile {
+  height: 100vh;
+  max-width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+/*section*/
+.main-cont{
+    width: 80%;
+    margin:  4rem auto;
+    text-align: center;
+}
+.left-side img{
+    width: 100%;
+    margin-bottom: 8.5rem;
+}
+.right-side h1{
+ font-family: 'Poppins', sans-serif;
+ font-weight: 600;
+ font-size: 2.1875rem;
+ line-height: 1.55;
+ margin-bottom: 4.0625rem;
+}
+.right-side p{
+    font-weight: 400;
+    font-size: 1.5625rem;
+    line-height: 1.35;
+    margin-bottom: 3.75rem;
+
+}
+.right-side button{
+    font-weight: 600;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    background: white;
+    height: 3.4rem;
+    width: 12.5rem;
+    border-radius: 80px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+.right-side button:hover {
+    color: white;
+    background: hsl(300, 69%, 71%);
+    cursor: pointer;
+  }
+
+/*bottom socmed*/
+.bottom-side{
+    margin-top: 8rem;
+    text-align: center;
+}
+.bottom-side a {
+    color: white;
+  }
+  
+  .bottom-side i {
+    font-size: 0.9rem;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid white;
+    line-height: 0.7rem;
+    height: 0.7rem;
+    width: 0.7rem;
+    vertical-align: middle;
+    padding: 0.7946875rem;
+    margin: 0 0.3rem;
+  }
+  .bottom-side i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1.5px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+  }
+  
+
+@media (min-width :1200px){
+    body {
+        background-image: url('/images/bg-desktop.svg');
+      background-color: hsl(257, 40%, 49%);
+      -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-repeat: no-repeat;
+    }
+    nav #logo{
+        width: 12rem;
+    margin: 3rem 3rem 1.5rem;
+    }
+    .main-cont{
+        width: 95%;
+        margin:  3rem 3rem 0 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .left-side{
+        flex-basis: 50%;
+        max-width: 200rem;    }
+    .right-side{
+        flex-basis: 50%;
+    max-width: 85rem;
+    padding: 0 2rem 0;
+        text-align: left;
+    }
+    .right-side h1{
+        width: 65%;
+        margin-bottom: 1rem;
+    }
+    .right-side p{
+        margin-bottom: 1.5rem;
+    }
+    .bottom-side{
+        text-align: end;  
+    margin-top: 5rem;  }
+}
